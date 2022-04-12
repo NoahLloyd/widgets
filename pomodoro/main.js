@@ -1,10 +1,12 @@
-const TIME_IN_SECONDS =25*60
+const TIME_IN_SECONDS = 25*60
 let time = TIME_IN_SECONDS
 let setTime = TIME_IN_SECONDS
 let running = false
 let runningInterval = null
+const timeElement = document.getElementById('time')
 const restartButton = document.getElementById('restart')
 const startButton = document.getElementById('startSession')
+
 startButton.addEventListener('click', () => {toggleSession()})
 
 const toggleSession = () => {
@@ -29,6 +31,11 @@ const startSession = () => {
             updateTime(time)
         }
 
+        if (time === 0) {
+            new Audio('./ringing.wav').play()
+            restartSession()
+        }
+
         now = now2
     }, 1000) 
     runningInterval = interval
@@ -40,17 +47,21 @@ const pauseSession = () => {
     running = false
     setTime = time
 }
-
-restartButton.addEventListener('click', () => {
+const restartSession = () => {
     if (running) pauseSession()
     time = TIME_IN_SECONDS
     setTime = TIME_IN_SECONDS
     updateTime()
+}
+
+restartButton.addEventListener('click', () => {
+    restartSession()
 })
 
 
+
+
 const updateTime = () => {
-    const timeElement = document.getElementById('time')
     const minutes = Math.floor(time/60)
     const seconds = time % 60
     const secondsLength = `${seconds}`.length
@@ -59,3 +70,5 @@ const updateTime = () => {
     const secondsDisplayed =  secondsLength === 0 ? "00" : secondsLength === 1 ? `0${seconds}` : seconds
     timeElement.innerText = `${minutes}:${secondsDisplayed}`
 }
+
+updateTime()
