@@ -4,7 +4,7 @@ const restartButton = document.getElementById("restart");
 let running = false;
 let intervalRunning = null;
 let globalTime = 0;
-let addedTime = 3596500;
+let addedTime = 87965000;
 
 startButton.addEventListener("click", () => {
   toggle();
@@ -37,6 +37,7 @@ const pause = () => {
   running = false;
 };
 
+// Doesn't display miliseconds when minutes appear. Doesn't display seconds when hours appear.
 const updateTime = (time) => {
   let minutes = 0;
   let hours = 0;
