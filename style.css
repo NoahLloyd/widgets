@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.time {
+    font-size: calc(10*2.3vw);
+    margin: calc(1*2.3vw);
+    color: #410910;
+    text-shadow: 15px 15px #FF000044;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start {
+    margin-right: calc(1*2.3vw);
+    font-size: calc(2*2.3vw);
+    outline: none;
+    border: none;
+    color: red;
+    font-weight: 800;
+    border-radius: 8%;
+    padding: calc(1*2.3vw) calc(3*2.3vw);
+    background-color: #410910;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+.start:hover {
+    background: red;
+    color: #410910;
+    transition: all 200ms ease-in-out;
+}
+.restart {
+    cursor: pointer;
+    height: calc(6*2.3vw);
+    width: calc(6*2.3vw);
+}
+.restart:hover {
+    transform: rotate(360deg) scale(1.1);
+    transition: transform 500ms;
+} 
