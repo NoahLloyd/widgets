@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&family=Work+Sans:wght@600&display=swap');
+
+:root {
+    --red: #FF0000;
+    --red-transparent: #FF000044;
+    --dark-red: #410910;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+.time {
+    font-size: calc(10*2vw);
+    margin: calc(1*2vw);
+    color: var(--dark-red);
+    text-shadow: 1vw 1vw var(--red-transparent);
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start {
+    margin-right: calc(1*2vw);
+    font-size: calc(2*2vw);
+    outline: none;
+    border: none;
+    color: var(--red);
+    font-weight: 800;
+    border-radius: 8%;
+    padding: calc(1*2vw) calc(3*2vw);
+    background-color: var(--dark-red);
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+.start:hover {
+    background: red;
+    color: var(--dark-red);
+    transition: all 200ms ease-in-out;
+}
+.restart {
+    cursor: pointer;
+    height: calc(6*2vw);
+    width: calc(6*2vw);
+}
+.restart:hover {
+    transform: rotate(360deg) scale(1.1);
+    transition: transform 500ms;
+} 
+.stopwatch {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 1vw;
+    font-size: 1.5vw;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    color: var(--dark-red);
+    background-color: var(--red-transparent);
+    padding: 0.5vw 1vw;
+    border-radius: 1vw;
+    cursor: pointer;
+    transition: all 300ms;
+}
+.stopwatch:hover {
+    color: white;
+    background-color: var(--dark-red);
+    transform: scale(1.1);
+    transition: all 300ms
+}
