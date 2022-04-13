@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&family=Work+Sans:wght@600&display=swap');
 
+:root {
+    --red: #FF0000;
+    --red-transparent: #FF000044;
+    --dark-red: #410910;
+}
 
 body {
     display: flex;
@@ -11,8 +16,8 @@ body {
 .time {
     font-size: calc(10*2.3vw);
     margin: calc(1*2.3vw);
-    color: #410910;
-    text-shadow: 1vw 1vw #FF000044;
+    color: var(--dark-red);
+    text-shadow: 1vw 1vw var(--red-transparent);
 }
 .controls {
     display: flex;
@@ -24,17 +29,17 @@ body {
     font-size: calc(2*2.3vw);
     outline: none;
     border: none;
-    color: red;
+    color: var(--red);
     font-weight: 800;
     border-radius: 8%;
     padding: calc(1*2.3vw) calc(3*2.3vw);
-    background-color: #410910;
+    background-color: var(--dark-red);
     transition: all 200ms ease;
     cursor: pointer;
 }
 .start:hover {
     background: red;
-    color: #410910;
+    color: var(--dark-red);
     transition: all 200ms ease-in-out;
 }
 .restart {
