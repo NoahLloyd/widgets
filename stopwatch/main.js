@@ -4,7 +4,7 @@ const restartButton = document.getElementById("restart");
 let running = false;
 let intervalRunning = null;
 let globalTime = 0;
-let addedTime = 602000;
+let addedTime = 0;
 
 startButton.addEventListener("click", () => {
   toggle();
