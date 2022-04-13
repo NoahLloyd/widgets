@@ -14,8 +14,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .time {
-    font-size: calc(10*2.3vw);
-    margin: calc(1*2.3vw);
+    font-size: calc(10*2vw);
+    margin: calc(1*2vw);
     color: var(--dark-red);
     text-shadow: 1vw 1vw var(--red-transparent);
 }
@@ -25,14 +25,14 @@ body {
     align-items: center;
 }
 .start {
-    margin-right: calc(1*2.3vw);
-    font-size: calc(2*2.3vw);
+    margin-right: calc(1*2vw);
+    font-size: calc(2*2vw);
     outline: none;
     border: none;
     color: var(--red);
     font-weight: 800;
     border-radius: 8%;
-    padding: calc(1*2.3vw) calc(3*2.3vw);
+    padding: calc(1*2vw) calc(3*2vw);
     background-color: var(--dark-red);
     transition: all 200ms ease;
     cursor: pointer;
@@ -44,8 +44,8 @@ body {
 }
 .restart {
     cursor: pointer;
-    height: calc(6*2.3vw);
-    width: calc(6*2.3vw);
+    height: calc(6*2vw);
+    width: calc(6*2vw);
 }
 .restart:hover {
     transform: rotate(360deg) scale(1.1);
