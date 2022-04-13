@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&family=Work+Sans:wght@600&display=swap');
+
+
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
 }
 .time {
     font-size: calc(10*2.3vw);
