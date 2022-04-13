@@ -60,8 +60,8 @@ body {
     font-weight: 800;
     border: none;
     outline: none;
-    color: var(--dark-red);
-    background-color: var(--red-transparent);
+    color: var(--red);
+    background-color: black;
     padding: 0.5vw 1vw;
     border-radius: 1vw;
     cursor: pointer;
