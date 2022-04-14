@@ -38,7 +38,7 @@ body {
     cursor: pointer;
 }
 .start:hover {
-    background: red;
+    background: #d3b700;
     color: var(--dark-red);
     transition: all 200ms ease-in-out;
 }
@@ -69,7 +69,7 @@ body {
 }
 .stopwatch:hover {
     color: black;
-    background-color: red;
+    background-color: #d3b700;
     transform: scale(1.1);
     transition: all 300ms
 }
