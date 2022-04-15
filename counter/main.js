@@ -8,6 +8,3 @@ number.addEventListener("change", (e) => {
   display.innerHTML = e.target.value;
   localStorage.setItem("count", e.target.value);
 });
-
-//! Ideas for widgets with local storage:
-//* A counter -- A navitgation widget -- a self uploaded picture that can link to a url

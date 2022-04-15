@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&family=Work+Sans:wght@600&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+.increment, .decrement {
+    border: none;
+    outline: none;
+    font-size: 1.5vw;
+    font-weight: 800;
+    background-color: yellow;
+    color: #00000099;
+    padding: 0.5vw 1vw;
+}
