@@ -38,7 +38,7 @@ body {
     cursor: pointer;
 }
 .start:hover {
-    background: d3b700;
+    background: #d3b700;
     color: var(--dark-red);
     transition: all 200ms ease-in-out;
 }

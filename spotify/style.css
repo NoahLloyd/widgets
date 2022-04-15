@@ -1,0 +1,41 @@
+.at {
+  background: #ffd65b !important;
+}
+.df {
+  background: white !important    ;
+  color: black !important;
+}
+.ah.dj.b3 {
+  color: black !important;
+}
+/* song */
+.ae.an.bi.d7.cs.dk.dl {
+  color: black !important;
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: 0.2px;
+  background-color: #ffd65baa;
+  border-bottom: 10px solid #ffd65baa;
+  border-top: 10px solid #ffd65baa;
+}
+.ae.an.bi.d7.cs.dk.dl:hover {
+    background-color: #ffd65b;
+    border-top: 8px solid #ffd65b;
+    border-bottom: 8px solid #ffd65b;
+
+}
+/* artist */
+.ao.du.ds.b3.bs.bu.bt.ae {
+  color: black !important;
+  font-weight: 200;
+  font-size: 1rem;
+
+}
+/* Number */
+.ae.dm.d9.dn.do.dp {
+    color: black;
+}   
+/* time*/
+.ae.dv.dw.d9.dt.dp.dn {
+    color:  black   ;
+}
