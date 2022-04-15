@@ -51,3 +51,16 @@ body {
     width: 100vw;
     object-fit: cover;
 }
+.tip {
+    position: fixed;
+    bottom: 0;
+    margin: 2vw;
+}
+.edit {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 7vh;
+    z-index: 10;
+    cursor: cell;
+}
