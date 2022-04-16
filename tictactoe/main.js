@@ -96,6 +96,7 @@ const handleTie = () => {
   endOfGame()
 };
 const endOfGame = () => {
+  document.querySelector('.modal').classList.remove('hidden')
   playAgain.classList.remove("hidden");
 
   // Removes the event listeners from the boxes

@@ -12,17 +12,11 @@ main {
   font-weight: 600;
   font-family: monospace;
 }
-.controls {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50% );
-}
+
 .text {
   font-size: 2rem;
   text-align: center;
   font-weight: 500;
-
 }
 .game {
 }
@@ -57,10 +51,30 @@ main {
   padding: 0.5rem 1rem;
   color: white;
   background-color: #120f43;
-  font-size: 1.2rem;
+  font-size: 2rem;
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 300ms ease all;
+  z-index: 10;
+}
+.play-again:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  background: #5f6688;
+  transition: 300ms ease all;
+}
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff77;
+  z-index: 5;
 }
 .hidden {
   visibility: hidden;
