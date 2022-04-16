@@ -1,0 +1,67 @@
+body {
+  background-color: #faf5ff;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: monospace;
+}
+.controls {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50% );
+}
+.text {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 500;
+
+}
+.game {
+}
+.row {
+  display: flex;
+}
+.column {
+  padding: 1rem 2rem;
+  color: #ffffff00;
+  user-select: none;
+  transition: color 300ms ease;
+}
+.col-show {
+  color: #5f6688;
+  transition: color 150ms ease-out;
+}
+.r {
+  border-right: 5px solid #120f43;
+}
+.l {
+  border-left: 5px solid #120f43;
+}
+.t {
+  border-top: 5px solid #120f43;
+}
+.b {
+  border-bottom: 5px solid #120f43;
+}
+.play-again {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #120f43;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.hidden {
+  visibility: hidden;
+}
