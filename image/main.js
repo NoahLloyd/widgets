@@ -15,7 +15,7 @@ if (alreadyMade) {
 }
 
 btn.addEventListener("click", () => {
-  const page = `<a class="href" href="${link.value}"><img class="image" src="${imageLink.value}"></a> <div class="edit" id="edit"></div>`;
+  const page = `<a class="href" target="_blank" href="${link.value}"><img class="image" src="${imageLink.value}"></a> <div class="edit" id="edit"></div>`;
   document.body.innerHTML = page;
   localStorage.setItem("image", page);
 
