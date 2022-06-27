@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&display=swap');
 
 :root {
-    --red: rgb(223, 200, 21);
+    --red: rgb(255, 244, 163);
     --red-transparent: rgba(223, 200, 21, 0.4);
-    --dark-red: rgb(0, 0, 0);
+    --dark-red: rgb(219, 205, 0);
 }
 
 body {
