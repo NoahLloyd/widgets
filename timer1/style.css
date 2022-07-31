@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&display=swap');
+
+:root {
+    --red: rgb(255, 255, 255);
+    --red-transparent: rgba(170, 178, 255, 0.277);
+    --dark-red: #0f00b2;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Alegraya Sans', sans-serif;
+}
+.pattern {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    object-fit: cover;
+}
+.time {
+    font-size: calc(10*2.3vw);
+    margin: calc(1*2.3vw);
+    color: var(--dark-red);
+    text-shadow: 1vw 1vw var(--red-transparent);
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start {
+    margin-right: calc(1*2.3vw);
+    font-size: calc(2*2.3vw);
+    outline: none;
+    border: none;
+    color: var(--red);
+    font-weight: 800;
+    border-radius: 8%;
+    padding: calc(1*2.3vw) calc(3*2.3vw);
+    background-color: var(--dark-red);
+    transition: all 200ms ease;
+    cursor: pointer;
+    font-family: 'Alegraya Sans', sans-serif;
+
+}
+.start:hover {
+    background:#07003f;
+    transition: all 300ms ease-in-out;
+    transform: scale(1.05);
+}
+.restart {
+    cursor: pointer;
+    height: calc(6*2.3vw);
+    width: calc(6*2.3vw);
+}
+.restart:hover {
+    transform: rotate(360deg) scale(1.1);
+    transition: transform 500ms;
+} 
