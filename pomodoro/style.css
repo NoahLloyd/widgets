@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&family=Work+Sans:wght@600&display=swap');
 
 :root {
-    --red: #FF0000;
-    --red-transparent: #FF000044;
-    --dark-red: #410910;
+    --red: white;
+    --red-transparent: #00000034;
+    --dark-red: black;
 }
 
 body {
@@ -38,9 +38,8 @@ body {
     cursor: pointer;
 }
 .start:hover {
-    background: red;
-    color: var(--dark-red);
-    transition: all 200ms ease-in-out;
+    transform: scale(1.1);
+    transition: transform 400ms ease-out;
 }
 .restart {
     cursor: pointer;
